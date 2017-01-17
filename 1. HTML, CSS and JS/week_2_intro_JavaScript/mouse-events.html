@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Page title</title>
+	</head>
+	<script>
+	function change_colour(new_colour){
+		document.getElementById("myDiv").style.background = new_colour;
+	}
+	</script>
+	<body>
+		<div id ="myDiv" style ="background:yellow" onmouseover ="change_colour('red')" onmouseout = "change_colour('yellow')">
+		 This text needs to be changed
+		</div> 
+		<button onclick= "change_colour('green')">Try it!</button>
+		<p id='para'> We willl try to show the datetime</p>
+		<button onclick ="document.getElementById('para').innerHTML =Date()">Hour</button>
+	</body>
+</html>

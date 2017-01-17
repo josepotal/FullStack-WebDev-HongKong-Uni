@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demonstration of Linking to a style file </title>
+		<style>
+			table, td {border:1px solid black; width:80%; height:80%}
+			td {width:33.33%; height: 33.33%}
+			.t{vertical-align: top} .m {vertical-align: middle} .b {vertical-align: bottom}
+			.l {text-align: left} .c {text-align: center} .r {text-align: right}
+		</style>
+		<meta name ="author" content ="Josep Otal">
+	</head>
+
+	<body>
+		<table>
+			<thead>
+				<tr> <th>Skills</th> <th>Diffculty</th> <th>My level</th><tr>
+			</thead>
+			<tbody>
+				<tr> <td class="t l">1</td> <td class = "t c">4</td> <td class ="t r"> 7</td><tr>
+				<tr> <td class ="m l">2</td> <td class ="m c">5</td> <td class ="m r"> 8</td><tr>
+				<tr> <td class = "b l">3</td> <td class ="b c">6</td> <td class ="b r">9</td><tr>
+			</tbody>
+		</table>
+		<p> This is a paragraph <span> before</span> the div </p>
+		<div style = "background:yellow; font-size:16pt; font-family:courier;
+		position:relative; top:10px;left:20px">
+			This is a div with some style
+		</div>
+		<p> This is a <span style = "background-color:yellow"> second</span> paragraph </p>
+		<div style = "background: lightblue; font-size:18pt;
+		position:absolute; top:202px; left:80px">
+			This is a div with style
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "node-express",
+  "private": true,
+  "devDependencies": {},
+  "engines": {},
+  "dependencies": {
+    "assert": "^1.4.1",
+    "mongodb": "^2.2.16"
+  }
+}

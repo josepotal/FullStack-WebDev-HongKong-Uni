@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demonstration of Linking to a style file </title>
+		<style>
+			table, td {border:1px solid black; width:80%; height:80%}
+			td {width:33.33%; height: 33.33%}
+			.t{vertical-align: top} .m {vertical-align: middle} .b {vertical-align: bottom}
+			.l {text-align: left} .c {text-align: center} .r {text-align: right}
+		</style>
+		<meta name ="author" content ="Josep Otal">
+	</head>
+
+	<body>
+	<form action = "http://www.google.com"
+		method = "get">
+			<p> Please enter any feedback</p>
+
+			<textarea rows="3" cols="60" name = "feedback">
+			Please enter your text here
+			</textarea>
+			<br>
+			<input type ="submit" value="Send">
+	</form>
+
+	<form>
+		Please enter your name <br>
+		<input type ="text" name ="feedback"> <br> <br>
+		Please select each of the followng that you have <br>
+		<input type ="checkbox" name = "itmes" value ="car"> Car <br>
+		<input type ="checkbox" name = "itmes" value ="teddy bear">Teddy bear <br>
+		<input type ="checkbox" name = "itmes" value ="toothbrush">Toothbrush <br>
+
+		Please indicate your intelligence level <br>
+		<input type ="radio" name = "iq" value ="high">High <br>
+		<input type ="radio" name = "iq" value ="high">Medium <br>
+		<input type ="radio" name = "iq" value ="high">Low <br> <br>
+
+		<p> what is the secret passowrd<br>
+		<input type ="password" name = "userpassword"> <br>
+
+		<p>Please select from the list </p>
+		<select name ="cities">
+			<option value ="hk">HongKong </option>
+			<option value ="vc">Vancouver </option>
+			<option value ="sf">San Francisco </option>
+		</select>
+		<!-- value, placeholder, autofocus, required-->
+		<p> Please fill in the following information:<br>
+			<label for "firstname">First Name: </label>
+			<input type ="text" id ="firstname" name ="firstname" value ="Josep" autofocus>
+			<br>
+			<label for "lastname">Last Name: </label>
+			<input type ="text" id ="lastname" name ="lastname" placeholder = "Your last name here">
+			<br>
+			<label for = "age">Age: </label>
+			<input type ="text" id ="age" name ="age" required>
+			<br>
+			<input type="submit" value ="Submit">
+			<!-- type could be <input type="number"> or "tdate","time","color","range"-->
+	</body>
+</html>

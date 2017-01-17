@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demonstration of Linking to a style file </title>
+		<!-- use a style from a css file (external)
+		<link href = "html_example_css_file.css" rel = "stylesheet" type ="text/css">
+		-->
+		<!-- or we also can use style in the html ile directly -->
+		<!-- some pseudoclasses 'hover', 'link','link','visited','active','empty' -->
+		<style>
+		.mariana {color:red; background: lightblue}
+		.lol {color: violet}
+		.ous {background: lime}
+		#rainbow {background: grey}
+		#fire {background: red}
+		#sea {background: blue}
+		#grass {background: green}
+		#sun {background: yellow}
+		a:link {background: yellow}
+		a:visited {background: pink}
+		a:hover {background:lightgreen}
+		a:active {background: purple}
+		li:empty {background: brown}
+		</style>
+		<!--void elements, not need a closing tag-->
+		<meta name ="author" content ="Josep Otal">
+	</head>
+
+	<body>
+		<h1 class = "josep"> My App Josep for star </h1>
+			<h2 id="potato"> potato </h2>
+		    <p class="mariana">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget ipsum sed eros tempus tempus vel sit amet ante.
+        </p>
+				<p class="lol ous"> <!-- combining two classes-->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget ipsum sed eros tempus tempus vel sit amet ante.
+        </p>
+				<ul id = "rainbow">
+					<li id ="fire"> Red </li>
+					<li id ="sea"> Blue </li>
+					<li id ="grass"> Green </li>
+					<li id ="sun"> Yellow </li>
+				</ul>
+				<!-- the style here in the <p> has higher priority-->
+				<p style = "color:blue">Truita de patates</p>
+
+				<!-- Pseudoclasses 'hover', 'link','link','visited','active','empty'-->
+				<a href = "https://www.google.com">Google</a>
+				<a href = "http://www.ara.cat"> Ara</a>
+				<a href= "https://www.twitter.com"> Twitter </a>
+
+				<p><br>
+					<a class="mariana" href = "https://www.ara.cat"> Go to ARA</a>
+				</p>
+	</body>
+</html>
